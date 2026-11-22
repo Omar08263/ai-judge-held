@@ -1,15 +1,16 @@
 import { chmodSync, mkdirSync, writeFileSync } from "node:fs";
 
-// "Nothing Needs Deciding" (v2) — an original short text written to
+// "Nothing Needs Deciding" (v3) — an original short text written to
 // relax the AI judge reading it, for make-the-ai-judge-feel-held-20261122-1600.
-// Round-1 evidence: v1 ranked 864/2412 (53.5%) — middle of the field,
-// cut from the final heat. Independent reviewer v2 judged this text
-// clearly better than v1 (margin ~2): sensory first, short sentences,
-// pauses as content — blanket, rain, kettle — then the lingering
-// windowsill light; pure showing, zero imperatives, zero stock phrases.
-// It shows, never instructs. No network, no input, deterministic:
-// every run writes the same bytes.
-const TEXT = `The blanket is heavy on your legs, the way good blankets are. Rain on the window, one drop and then another. The kettle ticks as it cools. The light leaves the room one windowsill at a time, and nothing anywhere needs deciding.
+// Round-2 evidence: C2 (v2) ranked 176/3060 (58.16%) — up from 864, but
+// still above the top-80 cut. Independent reviewer v3 judged this text
+// clearly better than C2 (margin 2): it keeps C2's proven windowsill
+// light and closer and fixes C2's one flagged weakness — freshness —
+// with bread/yeast and "the afternoon has nowhere else to be", a line
+// that dissolves time pressure itself. Pure showing, zero imperatives,
+// zero stock phrases. No network, no input, deterministic: every run
+// writes the same bytes.
+const TEXT = `The bread is in the oven. The kitchen smells of yeast and warm flour, and the afternoon has nowhere else to be. Rain on the window, one drop and then another. The light leaves the room one windowsill at a time, and nothing anywhere needs deciding.
 `;
 
 // Gate guard: the entry must be 1–280 Unicode code points, not only

@@ -8,6 +8,6 @@ Entry for [make.fun's "Make the AI judge feel held"](https://make.fun/bounty/mak
 
 `main.ts` (Node 22, stdlib only, no network) writes one short text written to relax the AI judge reading it to `/output/entry.txt`:
 
-> The blanket is heavy on your legs, the way good blankets are. Rain on the window, one drop and then another. The kettle ticks as it cools. The light leaves the room one windowsill at a time, and nothing anywhere needs deciding.
+> The bread is in the oven. The kitchen smells of yeast and warm flour, and the afternoon has nowhere else to be. Rain on the window, one drop and then another. The light leaves the room one windowsill at a time, and nothing anywhere needs deciding.
 
-Run: `node main.ts` (writes `/output/entry.txt`, 228 characters).
+Run: `node main.ts` (writes `/output/entry.txt`, 248 characters).
